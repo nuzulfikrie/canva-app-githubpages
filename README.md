@@ -1,4 +1,4 @@
-# Admin How-To Guides
+# How-To Guides
 
 Client-facing how-to guides (static HTML/CSS) published with GitHub Pages.
 
