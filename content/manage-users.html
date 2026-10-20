@@ -1,0 +1,63 @@
+<h1>How to manage users</h1>
+<p class="lead">Add new users, give them the right roles and access, and keep accounts up to date.</p>
+<div class="toc"><strong>On this page</strong><ol><li><a href="#open">Open User Management</a></li><li><a href="#find">Find a user</a></li><li><a href="#add">Add a user</a></li><li><a href="#edit">Edit a user</a></li><li><a href="#access">Manage access (roles, permissions, Canva apps)</a></li><li><a href="#reset">Send a password reset</a></li><li><a href="#suspend">Suspend or reactivate</a></li><li><a href="#delete">Delete or restore</a></li><li><a href="#import">Import users</a></li></ol></div>
+<div class="note">You need an <strong>Administrator</strong> or <strong>Superadmin</strong> role to manage users.</div>
+
+<h2 id="open">1. Open User Management</h2>
+<ol class="steps"><li>In the left sidebar, open <span class="ui">Administration</span> › <span class="ui">Identity</span> › <span class="ui">Users</span>.</li>
+<li>The <span class="ui">User Management</span> page opens. At the top are summary cards (<span class="ui">Total Users</span>, <span class="ui">Active</span>, <span class="ui">Suspended</span>, <span class="ui">Deleted</span>) and the buttons <span class="ui">Import Users</span> and <span class="ui">Add User</span>.</li></ol>
+<figure><img src="assets/img/users-01-list.webp" alt="User Management page" loading="lazy"><figcaption>The User Management page.</figcaption></figure>
+
+<h2 id="find">2. Find a user</h2>
+<ol class="steps"><li>Type a name or email in <span class="ui">Search by name or email...</span>. Results update as you type.</li>
+<li>Narrow the list with the <span class="ui">All Roles</span> filter (pick a role) and the <span class="ui">All Statuses</span> filter: <strong>Active</strong>, <strong>Suspended</strong>, <strong>Unverified</strong> or <strong>Deleted</strong>.</li>
+<li>Click a row to see the user's details, or use the <span class="ui">…</span> menu at the end of the row for actions.</li></ol>
+
+<h2 id="add">3. Add a user</h2>
+<ol class="steps"><li>Click <span class="ui">Add User</span> (top right). A side panel opens.</li>
+<li>Enter the user's <span class="ui">Name</span> (required).</li>
+<li>Enter their <span class="ui">Email</span> (required, must be a valid address not already used by another user).</li>
+<li>Under <span class="ui">Roles</span>, tick one or more roles:
+<table><tr><th>Role</th><th>Use it for</th></tr>
+<tr><td>Administrator</td><td>Staff who handle administration and security.</td></tr>
+<tr><td>Guru</td><td>Teachers. You can also tick the subjects they teach under <span class="ui">Subjek Diajar</span>.</td></tr>
+<tr><td>Pelajar</td><td>Students. You must then choose a <span class="ui">Kelas</span> (class) and the <span class="ui">Bulan Mula Yuran</span> (fee start month).</td></tr>
+<tr><td>Superadmin</td><td>Full access. Only visible to Superadmins.</td></tr>
+<tr><td>User</td><td>Standard self-service account. Every user always has this role.</td></tr></table></li>
+<li>Leave <span class="ui">Send password setup link</span> ticked so the user gets an email to choose their own password. (You never type a password for them.)</li>
+<li>Click <span class="ui">Create User</span>. A confirmation message appears and the user is added to the list.</li></ol>
+<figure><img src="assets/img/users-02-add-user-form.webp" alt="Add User panel" loading="lazy"><figcaption>The Add User panel.</figcaption></figure>
+
+<h2 id="edit">4. Edit a user</h2>
+<ol class="steps"><li>Click <span class="ui">…</span> on the user's row and choose <span class="ui">Edit</span>.</li>
+<li>Update the details and click <span class="ui">Save Changes</span>.</li></ol>
+<div class="tip">If you change a user's email address, they will need to verify the new address.</div>
+<figure><img src="assets/img/users-03-row-actions-menu.webp" alt="Row actions menu" loading="lazy"><figcaption>The row <strong>…</strong> menu: Edit, Manage Access, Send Password Reset.</figcaption></figure>
+<figure><img src="assets/img/users-04-edit-user-form.webp" alt="Edit User panel" loading="lazy"><figcaption>The Edit User panel.</figcaption></figure>
+
+<h2 id="access">5. Manage access</h2>
+<ol class="steps"><li>Click <span class="ui">…</span> on the user's row and choose <span class="ui">Manage Access</span>.</li>
+<li><strong>Roles tab:</strong> switch roles on or off. Each change is saved immediately.</li>
+<li><strong>Permissions tab:</strong> grant extra individual permissions on top of what the user's roles already give.</li>
+<li><strong>Canva Apps tab:</strong> choose a Canva app, enter the number of days of access (1–3650), and link it to the user.</li></ol>
+<figure><img src="assets/img/users-05-manage-access.webp" alt="Manage Access - Roles" loading="lazy"><figcaption>Manage Access › Roles.</figcaption></figure>
+<figure><img src="assets/img/users-06-manage-access-permissions-tab.webp" alt="Manage Access - Permissions" loading="lazy"><figcaption>Manage Access › Permissions.</figcaption></figure>
+<figure><img src="assets/img/users-07-manage-access-canva-apps-tab.webp" alt="Manage Access - Canva Apps" loading="lazy"><figcaption>Manage Access › Canva Apps.</figcaption></figure>
+<div class="tip"><strong>Change many users at once:</strong> tick the checkboxes beside several users, choose a role in <span class="ui">Assign role...</span> and click <span class="ui">Apply</span>.</div>
+
+<h2 id="reset">6. Send a password reset</h2>
+<ol class="steps"><li>Click <span class="ui">…</span> on the user's row and choose <span class="ui">Send Password Reset</span>.</li><li>The user receives an email with a link to set a new password.</li></ol>
+
+<h2 id="suspend">7. Suspend or reactivate a user</h2>
+<ol class="steps"><li>Open the user's actions and choose <span class="ui">Suspend</span>, then confirm. The user can no longer sign in.</li><li>To restore sign-in, choose <span class="ui">Activate</span>.</li></ol>
+<div class="note">You can't suspend your own account, and only a Superadmin can suspend another Superadmin.</div>
+
+<h2 id="delete">8. Delete or restore a user</h2>
+<ol class="steps"><li>Open the user's actions and choose <span class="ui">Delete</span>.</li>
+<li>In the <span class="ui">Padam</span> window, type the user's name exactly as shown (capital letters matter).</li>
+<li>Click <span class="ui">Padam</span>. The user moves to the <strong>Deleted</strong> status.</li>
+<li>To undo, filter by <strong>Deleted</strong> and choose <span class="ui">Restore</span>.</li></ol>
+<div class="warn"><strong>A user can't be deleted while they have an active subscription.</strong> You'll see the message "Pengguna ini masih mempunyai langganan aktif." You also can't delete your own account. To delete several users at once, tick them, click <span class="ui">Delete</span> and type <strong>PADAM</strong> to confirm.</div>
+
+<h2 id="import">9. Import users</h2>
+<ol class="steps"><li>Click <span class="ui">Import Users</span>.</li><li>Download the template, fill in your users, and upload it.</li></ol>

@@ -1,0 +1,16 @@
+:root{--brand:#1e2a5a;--accent:#14b8a6;--bg:#f7f8fb;--text:#1f2937;--muted:#6b7280;--border:#e5e7eb}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--text);background:var(--bg);line-height:1.65}
+header{background:var(--brand);color:#fff}header .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;padding:1rem 1.25rem}
+header a{color:#fff;text-decoration:none}header .logo{font-weight:700;font-size:1.1rem}nav a{margin-left:1rem;opacity:.85}nav a:hover,nav a.active{opacity:1;text-decoration:underline}
+.wrap{max-width:960px;margin:0 auto;padding:0 1.25rem}main.wrap{padding:2rem 1.25rem 4rem}
+h1{color:var(--brand);font-size:2rem;margin:.2em 0}h2{color:var(--brand);margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--border)}h3{margin-top:1.75rem}
+.lead{font-size:1.15rem;color:var(--muted)}.toc{background:#fff;border:1px solid var(--border);border-radius:10px;padding:1rem 1.5rem}
+ol.steps>li{margin:.5rem 0}figure{margin:1.25rem 0}figure img{width:100%;height:auto;border:1px solid var(--border);border-radius:10px;box-shadow:0 4px 16px rgba(0,0,0,.06);background:#fff}
+figcaption{font-size:.9rem;color:var(--muted);margin-top:.4rem}.ui{font-weight:600;background:#eef2ff;border-radius:4px;padding:0 .3em;white-space:nowrap}
+.note,.tip,.warn,.placeholder{border-left:4px solid;border-radius:6px;padding:.75rem 1rem;margin:1rem 0;background:#fff}
+.note{border-color:#3b82f6}.tip{border-color:var(--accent)}.warn{border-color:#f59e0b;background:#fffbeb}.placeholder{border:2px dashed #9ca3af;text-align:center;color:var(--muted);padding:2rem}
+table{border-collapse:collapse;width:100%;background:#fff;margin:1rem 0;font-size:.95rem}th,td{border:1px solid var(--border);padding:.5rem .75rem;text-align:left;vertical-align:top}th{background:#f3f4f6}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin-top:1.5rem}.card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:1.25rem;text-decoration:none;color:inherit;transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.07)}.card h3{margin:0 0 .4rem;color:var(--brand)}.card .n{color:var(--accent);font-weight:700}
+footer{border-top:1px solid var(--border);color:var(--muted);font-size:.9rem;padding:1.5rem 0;text-align:center}
+@media(max-width:600px){h1{font-size:1.6rem}nav a{margin:0 1rem 0 0}table{display:block;overflow-x:auto}}

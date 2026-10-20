@@ -1,0 +1,29 @@
+<h1>How to create a plan</h1>
+<p class="lead">Subscription plans control paid access to courses and exam pathways.</p>
+<div class="note">You need an <strong>Administrator</strong> or <strong>Superadmin</strong> role. The <span class="ui">Plans</span> menu only appears when enrollment is enabled for your platform. If you can't see it, contact your platform administrator.</div>
+
+<h2>1. Open Subscription plans</h2>
+<ol class="steps"><li>In the left sidebar, open <span class="ui">Administration</span> › <span class="ui">Plans</span>.</li><li>The <span class="ui">Subscription plans</span> page lists your existing plans.</li></ol>
+<figure><img src="assets/img/plans-01-list.webp" alt="Subscription plans page" loading="lazy"><figcaption>The Subscription plans page.</figcaption></figure>
+
+<h2>2. Create the plan</h2>
+<ol class="steps"><li>Click <span class="ui">New plan</span>. The <span class="ui">Create plan</span> form opens on the page.</li>
+<li>Fill in the fields:
+<table><tr><th>Field</th><th>What to enter</th></tr>
+<tr><td>Name</td><td>Required. The plan name your customers see.</td></tr>
+<tr><td>Slug</td><td>Optional. A short web-friendly ID. Leave it blank to create one from the name automatically. Each slug must be unique.</td></tr>
+<tr><td>Monthly price (MYR)</td><td>Price per month, at least 0.01.</td></tr>
+<tr><td>Annual price (MYR)</td><td>Price per year, at least 0.01.</td></tr>
+<tr><td>Sort order</td><td>A whole number, 0 or higher. Lower numbers are listed first.</td></tr>
+<tr><td>Available for checkout</td><td>Ticked: customers can buy the plan. Unticked: hidden from checkout.</td></tr>
+<tr><td>Description</td><td>Optional, up to 5000 characters.</td></tr></table>
+<div class="tip">Enter <strong>at least one</strong> price (monthly, annual, or both). All prices are in Malaysian Ringgit (MYR).</div></li>
+<li>Click <span class="ui">Save plan</span>. You'll see "Plan saved." and the plan appears in the table with its prices and status (<strong>Active</strong> or <strong>Archived</strong>).</li></ol>
+<figure><img src="assets/img/plans-02-new-plan-form.webp" alt="Create plan form" loading="lazy"><figcaption>The Create plan form.</figcaption></figure>
+
+<h2>3. Edit, archive or delete a plan</h2>
+<ul><li><strong>Edit:</strong> click the edit icon on the plan's row.</li>
+<li><strong>Archive:</strong> click the archive icon and confirm. New checkouts stop, but customers who already paid keep access until their paid period ends. To make it available again, edit the plan and tick <span class="ui">Available for checkout</span>.</li>
+<li><strong>Delete:</strong> click the trash icon, type the plan name exactly in the <span class="ui">Padam</span> window, and click <span class="ui">Padam</span>.</li></ul>
+<div class="warn"><strong>A plan with active subscribers can't be deleted.</strong> You'll see "Pelan ini masih mempunyai pelanggan aktif." Archive it instead.</div>
+<h2>Next step</h2><p>To make a plan unlock a pathway, link it in the pathway builder. See <a href="create-pathway.html#plans">How to create a subject pathway</a>.</p>
