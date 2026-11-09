@@ -1,43 +1,53 @@
-<h1>How to create a subject pathway</h1>
-<p class="lead">An exam pathway (for example SPM, STPM, UASA, UPKK or Matrikulasi) groups subjects, chapters, lessons and a question bank.</p>
-<div class="note">You need an <strong>Administrator</strong>, <strong>Superadmin</strong> or <strong>Guru</strong> role. Only Administrators and Superadmins can link plans.</div>
+<h1>Bagaimana mencipta laluan (pathway)</h1>
+<p class="lead">BM dahulu, kemudian English. Contoh utama: <strong>UASA Darjah 3</strong>. Contoh kedua: <strong>UPKK</strong> (6 subjek, 24 bab termasuk <span class="ui">Set Kuiz</span>, 36 pelajaran, 144 soalan — data seed sebenar).</p>
+<div class="note"><strong>Peranan:</strong> Administrator, Superadmin atau Guru. Hanya admin/superadmin boleh pautkan <span class="ui">Pelan</span>.</div>
+<div class="tip">Dalam senarai Pathways, gunakan carian (cth. <span class="ui">UASA</span> atau <span class="ui">UPKK</span>) supaya laluan ujian <code>Laluan Dusk …</code> / <code>Laluan Runner …</code> tidak kelihatan dalam skrin. <strong>Jangan padam</strong> laluan tersebut.</div>
 
-<h2>1. Open Exam Pathways</h2>
-<ol class="steps"><li>In the left sidebar, open <span class="ui">Administration</span> › <span class="ui">Akademi</span> › <span class="ui">Pathways</span>. <strong>Teachers (Guru)</strong> open <span class="ui">Kurikulum</span> › <span class="ui">Pembina laluan</span> instead.</li><li>The <span class="ui">Exam Pathways</span> page lists each pathway with its number of subjects and questions.</li></ol>
-<figure><img src="assets/img/pathways-01-list.webp" alt="Exam Pathways page" loading="lazy"><figcaption>The Exam Pathways page.</figcaption></figure>
+<h2 id="bm">Bahasa Melayu</h2>
+<h3>1. Buka Exam Pathways</h3>
+<ol class="steps">
+<li>Sidebar: <span class="ui">Administration</span> › <span class="ui">Akademi</span> › <span class="ui">Pathways</span>. Guru boleh buka melalui <span class="ui">Kurikulum</span> › <span class="ui">Pembina laluan</span>.</li>
+<li>Halaman <span class="ui">Exam Pathways</span> menunjukkan tajuk, bilangan subjek dan soalan. Butang <span class="ui">+ New pathway</span>.</li>
+</ol>
+<figure><img src="assets/img/pathways-01-list.webp" alt="Senarai Exam Pathways ditapis UASA" loading="lazy"><figcaption>Senarai ditapis “UASA” — UASA Darjah 3 kelihatan (10 subjek, 432 soalan).</figcaption></figure>
 
-<h2>2. Create the pathway</h2>
-<ol class="steps"><li>Click <span class="ui">New pathway</span>. A window opens.</li>
-<li>Enter a <span class="ui">Name</span> (required), for example "SPM 2027".</li>
-<li>Optionally add a <span class="ui">Description</span> (up to 500 characters).</li>
-<li>Click <span class="ui">Create</span>. You'll see "Pathway created."</li></ol>
-<figure><img src="assets/img/pathways-02-new-pathway-form.webp" alt="New pathway window" loading="lazy"><figcaption>The New pathway window.</figcaption></figure>
+<h3>2. Cipta laluan baharu (pilihan)</h3>
+<ol class="steps">
+<li>Klik <span class="ui">New pathway</span>.</li>
+<li>Isi <span class="ui">Name</span> (wajib) dan <span class="ui">Description</span> (pilihan), kemudian <span class="ui">Create</span>.</li>
+</ol>
+<figure><img src="assets/img/pathways-02-new-pathway-form.webp" alt="Borang New pathway" loading="lazy"><figcaption>Tetingkap New pathway (Name / Description / Create).</figcaption></figure>
 
-<h2>3. Open the pathway builder</h2>
-<ol class="steps"><li>Click the pathway's name in the list (or <span class="ui">…</span> › <span class="ui">Edit</span>).</li><li>The <span class="ui">Pembina laluan</span> (pathway builder) section opens: "Susun subjek, bab, dan pelajaran laluan ini."</li></ol>
-<div class="placeholder"><strong>Screenshot coming soon</strong><br>Pathway builder (Pembina laluan)</div>
+<h3>3. Pembina laluan — UASA Darjah 3</h3>
+<ol class="steps">
+<li>Buka <strong>UASA Darjah 3</strong>.</li>
+<li>Tab <span class="ui">Pembina</span> (aktif), <span class="ui">Pelan</span>, <span class="ui">Bank soalan</span> (cth. 432).</li>
+<li>Bahagian <span class="ui">Pembina laluan</span>: “Susun subjek, bab, dan pelajaran laluan ini.” Ringkasan: Subjek / Bab / Pelajaran / Soalan dipautkan. Butang <span class="ui">Kembang semua</span> / <span class="ui">Kuncup semua</span>.</li>
+<li><span class="ui">Tambah subjek</span> (placeholder <span class="ui">cth. Jawi</span>) atau <span class="ui">Pautkan subjek sedia ada</span> → <span class="ui">Pilih subjek</span> → <span class="ui">Buka subjek</span>.</li>
+</ol>
+<figure><img src="assets/img/pathways-03-uasa-darjah-3-builder.webp" alt="Pembina laluan UASA Darjah 3" loading="lazy"><figcaption>UASA Darjah 3: 10 subjek, 106 bab, 69 pelajaran, 432 soalan dipautkan.</figcaption></figure>
 
-<h2>4. Add subjects</h2>
-<p>Choose one of the following:</p>
-<ul><li><strong>New subject:</strong> type the subject name in <span class="ui">Tambah subjek</span> (for example "Jawi") and click <span class="ui">Tambah subjek</span>. If a subject with that name already exists, it is reused.</li>
-<li><strong>Existing subject:</strong> pick one from <span class="ui">Pautkan subjek sedia ada</span> (link an existing subject).</li></ul>
-<p>The subject is linked to the pathway and its page opens.</p>
+<h3>4. Subjek, bab dan pelajaran</h3>
+<ol class="steps">
+<li>Buka subjek (cth. Matematik / Bahasa Melayu).</li>
+<li><span class="ui">Tambah bab</span> / <span class="ui">Tambah pelajaran</span>. Nama baharu: <span class="ui">Nama baharu</span> → <span class="ui">Simpan</span> atau <span class="ui">Batal</span>.</li>
+</ol>
+<figure><img src="assets/img/pathways-04-subject.webp" alt="Halaman subjek dalam laluan" loading="lazy"><figcaption>Halaman subjek — bab dan pelajaran.</figcaption></figure>
+<figure><img src="assets/img/pathways-05-chapter.webp" alt="Halaman bab" loading="lazy"><figcaption>Halaman bab dengan senarai pelajaran.</figcaption></figure>
 
-<h2>5. Add chapters and lessons</h2>
-<ol class="steps"><li>To add a chapter (<em>bab</em>), click <span class="ui">+</span> on the subject row or <span class="ui">Tambah bab</span> on the subject page.</li>
-<li>To add a lesson (<em>pelajaran</em>), click <span class="ui">+</span> on the chapter row or <span class="ui">Tambah pelajaran</span> on the chapter page. The new lesson opens so you can write its content.</li>
-<li>To rename, enter the new name in <span class="ui">Nama baharu</span> and click <span class="ui">Simpan</span> (or <span class="ui">Batal</span> to cancel).</li>
-<li>Use the up and down arrows to reorder chapters and lessons. <span class="ui">Kembang semua</span> expands everything and <span class="ui">Kuncup semua</span> collapses everything.</li>
-<li>To delete a chapter or lesson, type its name in the <span class="ui">Padam</span> window to confirm.</li></ol>
+<h3>5. Wiki guru &amp; terbit</h3>
+<ol class="steps">
+<li>Buka pelajaran (cth. <strong>Nilai Tempat Ribu, Ratus, Puluh dan Sa</strong>).</li>
+<li>Mode <span class="ui">Sunting</span> / <span class="ui">Pratonton pelajar</span>. Status <span class="ui">Diterbitkan</span> dengan tindakan <span class="ui">Nyahterbit</span>.</li>
+<li>Panel <span class="ui">Bank soalan</span> di kanan: <span class="ui">+ Add question</span>, <span class="ui">Cari soalan…</span>. Bahagian <span class="ui">Semak kefahaman</span> menunjukkan soalan dipautkan.</li>
+<li><span class="ui">+ Tambah pelajaran</span> dalam pokok laluan untuk menambah lagi.</li>
+</ol>
+<figure><img src="assets/img/pathways-06-lesson-wiki.webp" alt="Wiki pelajaran dengan bank soalan" loading="lazy"><figcaption>Wiki pelajaran Matematik UASA Darjah 3 — Diterbitkan, Semak kefahaman, Bank soalan.</figcaption></figure>
 
-<h2 id="plans">6. Link plans (optional)</h2>
-<ol class="steps"><li>In the <span class="ui">Pelan</span> section, tick the plans that unlock this pathway.</li><li>Click <span class="ui">Simpan pelan</span>. You'll see "Plans saved."</li></ol>
-<div class="tip">Leave all plans unticked to keep the pathway open to every student. Only active plans are listed. See <a href="create-plan.html">How to create a plan</a>.</div>
+<h3>UPKK (contoh kedua)</h3>
+<p>Laluan <strong>UPKK</strong> mempunyai 6 subjek (Akidah, Ibadah, Sirah, Adab, Jawi &amp; Khat, Bahasa Arab). Setiap subjek ada bab kandungan serta bab <span class="ui">Set Kuiz</span>. Contoh pelajaran: <em>Pengertian Iman dan Enam Perkara yang Wajib Diimani</em>; contoh kuiz: <em>Akidah — Set Kuiz 1</em>. Jangan cipta kandungan UPKK yang tidak wujud dalam seed.</p>
 
-<h2>7. Build the question bank (optional)</h2>
-<ol class="steps"><li>In the <span class="ui">Bank soalan</span> section, tick the approved questions to include.</li><li>Click <span class="ui">Simpan bank soalan</span>. You'll see "Question bank saved."</li></ol>
-<div class="note">Only approved questions appear here. Approve questions in the Bank soalan area first.</div>
-
-<h2>Deleting a pathway</h2>
-<p>Choose <span class="ui">…</span> › <span class="ui">Delete</span>, type the pathway name exactly, and click <span class="ui">Padam</span>.</p>
-<div class="warn"><strong>A pathway can't be deleted while students are still learning in it.</strong> You'll see "Laluan ini masih mempunyai pelajar yang sedang belajar."</div>
+<h2 id="en">English</h2>
+<p>Open <span class="ui">Administration</span> › <span class="ui">Akademi</span> › <span class="ui">Pathways</span> (teachers: <span class="ui">Kurikulum</span> › <span class="ui">Pembina laluan</span>). Filter the list so leftover <code>Laluan Dusk</code> / <code>Laluan Runner</code> rows stay out of screenshots — never delete them.</p>
+<p>Use <strong>UASA Darjah 3</strong> as the main walkthrough: <span class="ui">Pembina</span> tab, <span class="ui">Tambah subjek</span> / <span class="ui">Pautkan subjek sedia ada</span>, chapters and lessons, then the lesson wiki (<span class="ui">Sunting</span>, <span class="ui">Diterbitkan</span> / <span class="ui">Nyahterbit</span>, linked <span class="ui">Semak kefahaman</span> questions). <strong>UPKK</strong> is a second real pathway with Set Kuiz chapters — use only real seeded titles.</p>
+<div class="tip">Related: <a href="set-ujian.html">Set ujian (3a)</a> · <a href="question-bank.html">Bank soalan</a> · <a href="guru-exam-builder.html">ExamBuilder guru (3b)</a></div>

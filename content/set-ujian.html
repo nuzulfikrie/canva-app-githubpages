@@ -1,0 +1,34 @@
+<h1>Set ujian pada pelajaran (laluan) &amp; pandangan pelajar</h1>
+<p class="lead"><strong>Panduan 3a</strong> — feature <code>pathway_exam_sets</code>. Ini <em>bukan</em> ExamBuilder bahan guru. Untuk MCQ / Subjektif / Pemahaman / Esei pada bahan, lihat <a href="guru-exam-builder.html">Panduan 3b</a>.</p>
+<div class="note">Contoh utama: pelajaran <strong>Nilai Tempat Ribu, Ratus, Puluh dan Sa</strong> (UASA Darjah 3) → set <strong>Latihan Nilai Tempat Ribu, Ratus, Puluh dan Sa</strong> (8 soalan, 20 minit, diterbitkan). UPKK: latihan topik + bab <span class="ui">Set Kuiz</span> (contoh <em>Set Kuiz 1</em>, 40 minit) — data seed sebenar.</div>
+
+<h2>Bahasa Melayu</h2>
+<h3>1. Senarai Set ujian (admin / guru)</h3>
+<ol class="steps">
+<li>Dari pelajaran laluan, buka <span class="ui">Set ujian</span>.</li>
+<li>Tajuk halaman <span class="ui">Set ujian</span>. Butang <span class="ui">+ Tambah set ujian</span>.</li>
+<li><span class="ui">Bundel pelajaran</span> (badge <span class="ui">Aktif</span>) dan <span class="ui">Bahan pelajaran</span> (muat naik PDF/video) mungkin kelihatan di atas senarai.</li>
+<li>Jadual: <span class="ui">TAJUK</span>, <span class="ui">STATUS</span> (<span class="ui">Diterbitkan</span>), <span class="ui">SOALAN</span>, <span class="ui">MASA</span>.</li>
+</ol>
+<figure><img src="assets/img/examsets-01-lesson-list.webp" alt="Senarai Set ujian untuk pelajaran" loading="lazy"><figcaption>Set ujian — Latihan Nilai Tempat… Diterbitkan, 8 soalan, 20 minit.</figcaption></figure>
+
+<h3>2. Bina / terbit set</h3>
+<ol class="steps">
+<li>Buka set. Status hijau <span class="ui">Diterbitkan</span>, teks cth. <span class="ui">8 soalan dihimpun</span>.</li>
+<li>Apabila diterbitkan: banner kunci <span class="ui">Set ujian telah diterbitkan</span> — “Kandungan dikunci. Tekan <span class="ui">Jadikan draf</span> di atas untuk menyunting semula.”</li>
+<li>Untuk sunting semula: <span class="ui">Jadikan draf</span>, kemudian sunting <span class="ui">Butiran set ujian</span> (Tajuk, Arahan, Tempoh, Had percubaan, Peratus lulus, <span class="ui">Acak susunan soalan</span>), bahagian (<span class="ui">Kod</span> / <span class="ui">Tajuk</span> — <em>bukan</em> jenis MCQ/Subjektif/Pemahaman/Esei), dan pilih soalan dari <span class="ui">Bank soalan laluan</span>. Kemudian <span class="ui">Terbitkan</span>.</li>
+</ol>
+<figure><img src="assets/img/examsets-02-build-published.webp" alt="Set ujian diterbitkan dan dikunci" loading="lazy"><figcaption>Keadaan diterbitkan — kandungan dikunci; gunakan Jadikan draf untuk menyunting.</figcaption></figure>
+<div class="warn">Skrin di atas menunjukkan set <strong>sudah diterbitkan</strong> (struktur dikunci). Medan tetapan penuh kelihatan selepas <span class="ui">Jadikan draf</span>. Bahagian set laluan ialah Kod/Tajuk bebas (cth. seed UPKK: <span class="ui">Bahagian A — Objektif</span>), berbeza daripada jenis bahagian ExamBuilder dalam 3b.</div>
+
+<h3>3. Pandangan pelajar</h3>
+<ol class="steps">
+<li>Menu pelajar: <span class="ui">Simulasi peperiksaan</span> — “Ujian bermasa yang dibuka oleh pelan langganan anda.”</li>
+<li>Kad set (cth. <strong>Kertas Model 1</strong> · UASA Darjah 3 · 40 soalan · 60 min) → <span class="ui">Buka</span>.</li>
+<li>Halaman pendaratan set: <span class="ui">Mula set ujian</span> — Soalan, Masa, Markah lulus, Baki percubaan; butang <span class="ui">Mula ujian</span> (“Pemasa bermula sebaik sahaja anda menekan Mula ujian.”). Sejarah <span class="ui">Percubaan lepas</span>.</li>
+</ol>
+<figure><img src="assets/img/pelajar-01-simulasi.webp" alt="Simulasi Peperiksaan pelajar" loading="lazy"><figcaption>Simulasi Peperiksaan — senarai set UASA Darjah 3.</figcaption></figure>
+<figure><img src="assets/img/pelajar-02-exam-set-landing.webp" alt="Pendaratan set ujian pelajar" loading="lazy"><figcaption>Mula set ujian — 8 soalan, 20 minit, markah lulus 70%.</figcaption></figure>
+
+<h2>English</h2>
+<p>Pathway <span class="ui">Set ujian</span> lives on a lesson, pulls from the pathway bank, and unlocks for students under <span class="ui">Simulasi peperiksaan</span>. Publishing locks structure until <span class="ui">Jadikan draf</span>. This is a different feature from the guru material <a href="guru-exam-builder.html">ExamBuilder (3b)</a>.</p>
