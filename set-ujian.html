@@ -3,7 +3,7 @@
 <header><div class="wrap"><a class="logo" href="index.html">How-To Guides</a><nav><a href="index.html">Home</a><a href="manage-users.html">Manage users</a><a href="create-plan.html">Create a plan</a><a href="create-pathway.html">Create a pathway</a><a href="question-bank.html">Question bank</a><a href="set-ujian.html" class="active">Set ujian</a><a href="guru-exam-builder.html">ExamBuilder</a><a href="guru-guide.html">Guru guide</a><a href="pelajar-guide.html">Pelajar guide</a></nav></div></header>
 <main class="wrap"><h1>Set ujian pada pelajaran (laluan) &amp; pandangan pelajar</h1>
 <p class="lead"><strong>Panduan 3a</strong> — feature <code>pathway_exam_sets</code>. Ini <em>bukan</em> ExamBuilder bahan guru. Untuk MCQ / Subjektif / Pemahaman / Esei pada bahan, lihat <a href="guru-exam-builder.html">Panduan 3b</a>.</p>
-<div class="note">Contoh utama: pelajaran <strong>Nilai Tempat Ribu, Ratus, Puluh dan Sa</strong> (UASA Darjah 3) → set <strong>Latihan Nilai Tempat Ribu, Ratus, Puluh dan Sa</strong> (8 soalan, 20 minit, diterbitkan). UPKK: latihan topik + bab <span class="ui">Set Kuiz</span> (contoh <em>Set Kuiz 1</em>, 40 minit) — data seed sebenar.</div>
+<div class="note">Contoh utama: pelajaran <strong>Nilai Tempat Ribu, Ratus, Puluh dan Sa</strong> (UASA Darjah 3) → set <strong>Latihan Nilai Tempat Ribu, Ratus, Puluh dan Sa</strong> (8 soalan, 20 minit, diterbitkan). UPKK: latihan topik + bab <span class="ui">Set Kuiz</span> (contoh <em>Set Kuiz 1</em>, 40 minit) — data sebenar.</div>
 
 <h2>Bahasa Melayu</h2>
 <h3>1. Senarai Set ujian (admin / guru)</h3>
@@ -13,26 +13,72 @@
 <li><span class="ui">Bundel pelajaran</span> (badge <span class="ui">Aktif</span>) dan <span class="ui">Bahan pelajaran</span> (muat naik PDF/video) mungkin kelihatan di atas senarai.</li>
 <li>Jadual: <span class="ui">TAJUK</span>, <span class="ui">STATUS</span> (<span class="ui">Diterbitkan</span>), <span class="ui">SOALAN</span>, <span class="ui">MASA</span>.</li>
 </ol>
-<figure><img src="assets/img/examsets-01-lesson-list.webp" alt="Senarai Set ujian untuk pelajaran" loading="lazy"><figcaption>Set ujian — Latihan Nilai Tempat… Diterbitkan, 8 soalan, 20 minit.</figcaption></figure>
+<figure id="fig-su-1"><img src="assets/img/examsets-01-lesson-list.webp" alt="Senarai Set ujian untuk pelajaran" loading="lazy"><figcaption>Rajah 1 — Set ujian: Latihan Nilai Tempat… Diterbitkan, 8 soalan, 20 minit.</figcaption></figure>
 
-<h3>2. Bina / terbit set</h3>
+<h3>2. Set diterbitkan (dikunci)</h3>
 <ol class="steps">
 <li>Buka set. Status hijau <span class="ui">Diterbitkan</span>, teks cth. <span class="ui">8 soalan dihimpun</span>.</li>
-<li>Apabila diterbitkan: banner kunci <span class="ui">Set ujian telah diterbitkan</span> — “Kandungan dikunci. Tekan <span class="ui">Jadikan draf</span> di atas untuk menyunting semula.”</li>
-<li>Untuk sunting semula: <span class="ui">Jadikan draf</span>, kemudian sunting <span class="ui">Butiran set ujian</span> (Tajuk, Arahan, Tempoh, Had percubaan, Peratus lulus, <span class="ui">Acak susunan soalan</span>), bahagian (<span class="ui">Kod</span> / <span class="ui">Tajuk</span> — <em>bukan</em> jenis MCQ/Subjektif/Pemahaman/Esei), dan pilih soalan dari <span class="ui">Bank soalan laluan</span>. Kemudian <span class="ui">Terbitkan</span>.</li>
+<li>Banner kunci: <span class="ui">Set ujian telah diterbitkan</span> — “Kandungan dikunci. Tekan <span class="ui">Jadikan draf</span> di atas untuk menyunting semula.”</li>
 </ol>
-<figure><img src="assets/img/examsets-02-build-published.webp" alt="Set ujian diterbitkan dan dikunci" loading="lazy"><figcaption>Keadaan diterbitkan — kandungan dikunci; gunakan Jadikan draf untuk menyunting.</figcaption></figure>
-<div class="warn">Skrin di atas menunjukkan set <strong>sudah diterbitkan</strong> (struktur dikunci). Medan tetapan penuh kelihatan selepas <span class="ui">Jadikan draf</span>. Bahagian set laluan ialah Kod/Tajuk bebas (cth. seed UPKK: <span class="ui">Bahagian A — Objektif</span>), berbeza daripada jenis bahagian ExamBuilder dalam 3b.</div>
+<figure id="fig-su-2"><img src="assets/img/examsets-02-build-published.webp" alt="Set ujian diterbitkan dan dikunci" loading="lazy"><figcaption>Rajah 2 — Keadaan diterbitkan: kandungan dikunci.</figcaption></figure>
 
-<h3>3. Pandangan pelajar</h3>
+<h3>3. Sunting tetapan (hanya jika tiada percubaan pelajar)</h3>
+<ol class="steps">
+<li>Set yang diterbitkan dikunci. Tekan <span class="ui">Jadikan draf</span> <strong>hanya jika tiada percubaan pelajar</strong> pada set itu. Jika pelajar sudah menjawab, jangan anggap anda boleh membuka draf untuk sunting struktur.</li>
+<li>Dalam status <span class="ui">Draf</span>, sunting <span class="ui">Butiran set ujian</span>: <span class="ui">Tajuk</span>, <span class="ui">Arahan</span> (pilihan), <span class="ui">Tempoh (minit)</span> — kosong = tanpa masa, <span class="ui">Had percubaan</span>, <span class="ui">Peratus lulus</span>, kotak <span class="ui">Acak susunan soalan</span>.</li>
+<li>Klik <span class="ui">Simpan butiran</span>.</li>
+<li>Bahagian (pilihan): <span class="ui">+ Tambah bahagian</span> — kod/tajuk bebas (bukan jenis MCQ/Subjektif/Pemahaman/Esei seperti ExamBuilder 3b). Pilih soalan dari <span class="ui">Bank soalan laluan</span>.</li>
+<li>Apabila siap: <span class="ui">Terbitkan</span>.</li>
+</ol>
+<figure id="fig-su-3"><img src="assets/img/examsets-03-settings-form.webp" alt="Borang Butiran set ujian dalam draf" loading="lazy"><figcaption>Rajah 3 — Draf: Butiran set ujian (Tajuk, Arahan, Tempoh, Had percubaan, Peratus lulus, Acak susunan soalan, Simpan butiran) dan Bahagian + Tambah bahagian; butang Terbitkan.</figcaption></figure>
+<figure id="fig-su-4"><img src="assets/img/examsets-04-settings-form-detail.webp" alt="Butiran set ujian dan bahagian" loading="lazy"><figcaption>Rajah 4 — Butiran set ujian (detail) termasuk Bahagian dan kawasan Bank soalan laluan / Soalan dipilih.</figcaption></figure>
+<div class="warn"><span class="ui">Jadikan draf</span> untuk sunting hanya dibenarkan apabila <strong>tiada percubaan pelajar</strong>. Jangan implikasikan draf boleh dibuka selepas pelajar sudah menjawab.</div>
+
+<h3>4. Pandangan pelajar</h3>
 <ol class="steps">
 <li>Menu pelajar: <span class="ui">Simulasi peperiksaan</span> — “Ujian bermasa yang dibuka oleh pelan langganan anda.”</li>
-<li>Kad set (cth. <strong>Kertas Model 1</strong> · UASA Darjah 3 · 40 soalan · 60 min) → <span class="ui">Buka</span>.</li>
+<li>Kad set (cth. <strong>Kertas Model 1</strong> · UASA Darjah 3 · 40 soalan · 60 min) → <span class="ui">Buka</span>. <strong>Nota:</strong> kertas dengan nama sama (cth. Kertas Model 1) mungkin milik <em>subjek berbeza</em>.</li>
 <li>Halaman pendaratan set: <span class="ui">Mula set ujian</span> — Soalan, Masa, Markah lulus, Baki percubaan; butang <span class="ui">Mula ujian</span> (“Pemasa bermula sebaik sahaja anda menekan Mula ujian.”). Sejarah <span class="ui">Percubaan lepas</span>.</li>
 </ol>
-<figure><img src="assets/img/pelajar-01-simulasi.webp" alt="Simulasi Peperiksaan pelajar" loading="lazy"><figcaption>Simulasi Peperiksaan — senarai set UASA Darjah 3.</figcaption></figure>
-<figure><img src="assets/img/pelajar-02-exam-set-landing.webp" alt="Pendaratan set ujian pelajar" loading="lazy"><figcaption>Mula set ujian — 8 soalan, 20 minit, markah lulus 70%.</figcaption></figure>
+<figure id="fig-su-5"><img src="assets/img/pelajar-01-simulasi.webp" alt="Simulasi Peperiksaan pelajar" loading="lazy"><figcaption>Rajah 5 — Simulasi Peperiksaan: senarai set UASA Darjah 3. Nama sama (Kertas Model 1) boleh merujuk subjek berbeza.</figcaption></figure>
+<figure id="fig-su-6"><img src="assets/img/pelajar-02-exam-set-landing.webp" alt="Pendaratan set ujian pelajar" loading="lazy"><figcaption>Rajah 6 — Mula set ujian: 8 soalan, 20 minit, markah lulus 70%.</figcaption></figure>
+
+<div class="tip">Berkaitan: <a href="guru-exam-builder.html">ExamBuilder guru (3b)</a> · <a href="question-bank.html">Bank soalan</a> · <a href="create-pathway.html">Laluan</a></div>
 
 <h2>English</h2>
-<p>Pathway <span class="ui">Set ujian</span> lives on a lesson, pulls from the pathway bank, and unlocks for students under <span class="ui">Simulasi peperiksaan</span>. Publishing locks structure until <span class="ui">Jadikan draf</span>. This is a different feature from the guru material <a href="guru-exam-builder.html">ExamBuilder (3b)</a>.</p>
+<p class="lead"><strong>Guide 3a</strong> — feature <code>pathway_exam_sets</code>. This is <em>not</em> the teacher-material ExamBuilder. For MCQ / Subjective / Comprehension / Essay on materials, see <a href="guru-exam-builder.html">Guide 3b</a>.</p>
+<div class="note">Primary example: lesson <strong>Nilai Tempat Ribu, Ratus, Puluh dan Sa</strong> (UASA Darjah 3) → set <strong>Latihan Nilai Tempat Ribu, Ratus, Puluh dan Sa</strong> (8 questions, 20 minutes, published). UPKK: topic drills + <span class="ui">Set Kuiz</span> chapters (e.g. <em>Set Kuiz 1</em>, 40 minutes) — real data.</div>
+
+<h3>1. Exam-set list (admin / teacher)</h3>
+<ol class="steps">
+<li>From a pathway lesson, open <span class="ui">Set ujian</span>.</li>
+<li>Page title <span class="ui">Set ujian</span>. Button <span class="ui">+ Tambah set ujian</span>.</li>
+<li><span class="ui">Bundel pelajaran</span> (badge <span class="ui">Aktif</span>) and <span class="ui">Bahan pelajaran</span> (PDF/video upload) may appear above the list.</li>
+<li>Table columns: <span class="ui">TAJUK</span>, <span class="ui">STATUS</span> (<span class="ui">Diterbitkan</span>), <span class="ui">SOALAN</span>, <span class="ui">MASA</span>. See <strong>Figure 1</strong>.</li>
+</ol>
+
+<h3>2. Published set (locked)</h3>
+<ol class="steps">
+<li>Open the set. Green status <span class="ui">Diterbitkan</span>, e.g. <span class="ui">8 soalan dihimpun</span>.</li>
+<li>Lock banner: <span class="ui">Set ujian telah diterbitkan</span> — “Content locked. Press <span class="ui">Jadikan draf</span> above to edit again.” See <strong>Figure 2</strong>.</li>
+</ol>
+
+<h3>3. Edit settings (only if there are no student attempts)</h3>
+<ol class="steps">
+<li>A published set is locked. Press <span class="ui">Jadikan draf</span> <strong>only when no student attempts exist</strong> on that set. If students have already answered, do not assume you can open a draft to edit structure.</li>
+<li>In <span class="ui">Draf</span> status, edit <span class="ui">Butiran set ujian</span>: <span class="ui">Tajuk</span>, <span class="ui">Arahan</span> (optional), <span class="ui">Tempoh (minit)</span> — empty = no time limit, <span class="ui">Had percubaan</span>, <span class="ui">Peratus lulus</span>, <span class="ui">Acak susunan soalan</span> checkbox.</li>
+<li>Click <span class="ui">Simpan butiran</span>.</li>
+<li>Optional sections: <span class="ui">+ Tambah bahagian</span> — free code/title (not MCQ/Subjective/Comprehension/Essay section kinds from ExamBuilder 3b). Pick questions from <span class="ui">Bank soalan laluan</span>.</li>
+<li>When ready: <span class="ui">Terbitkan</span>. See <strong>Figure 3</strong> and <strong>Figure 4</strong>.</li>
+</ol>
+<div class="warn"><span class="ui">Jadikan draf</span> for editing is allowed only when there are <strong>no student attempts</strong>. Do not imply drafts are available after students have answered.</div>
+
+<h3>4. Student view</h3>
+<ol class="steps">
+<li>Student menu: <span class="ui">Simulasi peperiksaan</span> — timed exams opened by the subscription plan.</li>
+<li>Set card (e.g. <strong>Kertas Model 1</strong> · UASA Darjah 3 · 40 questions · 60 min) → <span class="ui">Buka</span>. <strong>Note:</strong> papers with the same name (e.g. Kertas Model 1) may belong to <em>different subjects</em>.</li>
+<li>Landing page: <span class="ui">Mula set ujian</span> — Questions, Time, Pass mark, Remaining attempts; <span class="ui">Mula ujian</span> button (“Timer starts as soon as you press Start”). History under <span class="ui">Percubaan lepas</span>. See <strong>Figure 5</strong> and <strong>Figure 6</strong>.</li>
+</ol>
+
+<div class="tip">Related: <a href="guru-exam-builder.html">ExamBuilder (3b)</a> · <a href="question-bank.html">Question bank</a> · <a href="create-pathway.html">Pathways</a></div>
 </main><footer><div class="wrap">How-To Guides · Screens may differ slightly as the platform is updated.</div></footer></body></html>

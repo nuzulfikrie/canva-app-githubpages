@@ -8,10 +8,10 @@
 <h3>1. Buka Question bank</h3>
 <ol class="steps">
 <li><span class="ui">Administration</span> › <span class="ui">Akademi</span> › Questions → halaman <span class="ui">Question bank</span>.</li>
-<li>Butang <span class="ui">Imports</span> dan <span class="ui">+ New question</span>. Carian: <span class="ui">Search question, topic, or ID</span>. Penapis status: <span class="ui">All statuses</span>.</li>
+<li>Butang <span class="ui">Imports</span> (administrator sahaja) dan <span class="ui">+ New question</span>. Carian: <span class="ui">Search question, topic, or ID</span>. Penapis status: <span class="ui">All statuses</span>.</li>
 <li>Lajur: Question (badge jenis cth. <span class="ui">Aneka Pilihan</span>), Topic, Difficulty, Status (<span class="ui">Approved</span>).</li>
 </ol>
-<figure><img src="assets/img/questions-01-bank-list.webp" alt="Senarai Question bank" loading="lazy"><figcaption>Question bank — Aneka Pilihan, Approved (contoh rekod UPKK Bahasa Arab dalam senarai).</figcaption></figure>
+<figure id="fig-qb-1"><img src="assets/img/questions-01-bank-list.webp" alt="Senarai Question bank" loading="lazy"><figcaption>Rajah 1 — Question bank: Aneka Pilihan, Approved (contoh rekod UPKK Bahasa Arab).</figcaption></figure>
 
 <h3>2. Cipta soalan</h3>
 <ol class="steps">
@@ -21,29 +21,81 @@
 <li>Untuk Aneka Pilihan: <span class="ui">Option A</span>–<span class="ui">F</span> (boleh <span class="ui">Add picture</span>), kemudian <span class="ui">Correct option</span>.</li>
 <li><span class="ui">Marks</span>, <span class="ui">Difficulty</span>, dan medan lain di bahagian bawah borang.</li>
 </ol>
-<figure><img src="assets/img/questions-02-create-form.webp" alt="Borang Create question" loading="lazy"><figcaption>Create question — Type Aneka Pilihan, Option A–F, Correct option.</figcaption></figure>
+<figure id="fig-qb-2"><img src="assets/img/questions-02-create-form.webp" alt="Borang Create question" loading="lazy"><figcaption>Rajah 2 — Create question: Type Aneka Pilihan, Option A–F, Correct option.</figcaption></figure>
 
 <h3>3. Sunting &amp; kunci jawapan</h3>
 <ol class="steps">
 <li>Buka soalan sedia ada → <span class="ui">Edit question</span>.</li>
 <li>Pastikan <span class="ui">Correct option</span> ditetapkan (cth. <span class="ui">C</span>).</li>
+<li>Guru hanya boleh sunting/padam soalan yang <strong>dicipta sendiri</strong>. <span class="ui">Approve</span> dan <span class="ui">Archive</span> ialah tindakan administrator.</li>
 </ol>
-<figure><img src="assets/img/questions-03-edit-form.webp" alt="Borang Edit question" loading="lazy"><figcaption>Edit question dengan pilihan dan Correct option.</figcaption></figure>
+<figure id="fig-qb-3"><img src="assets/img/questions-03-edit-form.webp" alt="Borang Edit question" loading="lazy"><figcaption>Rajah 3 — Edit question dengan pilihan dan Correct option.</figcaption></figure>
 
 <h3>4. Kumpulkan ke set</h3>
-<p>Soalan diluluskan (<span class="ui">Approved</span>) ditag ke laluan (tab <span class="ui">Bank soalan</span> pada pathway, cth. 432 untuk UASA Darjah 3). Kemudian ia dipilih ke dalam <strong>Set ujian</strong> pelajaran — lihat <a href="set-ujian.html">Panduan 3a</a>. Itu cara “set” dibentuk untuk simulasi laluan.</p>
+<ol class="steps">
+<li>Soalan diluluskan (<span class="ui">Approved</span>) ditag ke laluan (tab <span class="ui">Bank soalan</span> pada pathway, cth. 432 untuk UASA Darjah 3).</li>
+<li>Kemudian ia dipilih ke dalam <strong>Set ujian</strong> pelajaran — lihat <a href="set-ujian.html">Panduan 3a</a>. Itu cara “set” dibentuk untuk simulasi laluan.</li>
+</ol>
 
 <h3>5. Guru vs Administrator</h3>
+<p><span class="ui">Imports</span>, <span class="ui">Approve</span>, dan <span class="ui">Archive</span> ialah <strong>administrator sahaja</strong>. Guru boleh lihat &amp; cipta soalan; sunting/padam hanya untuk soalan sendiri. Guru <strong>tidak</strong> mempunyai Imports.</p>
 <table>
 <thead><tr><th>Tindakan</th><th>Administrator / Superadmin</th><th>Guru</th></tr></thead>
 <tbody>
 <tr><td>Lihat &amp; cipta soalan</td><td>Ya</td><td>Ya</td></tr>
-<tr><td>Kemas kini / padam / <span class="ui">Approve</span></td><td>Ya</td><td>Kemas kini terhad kepada soalan sendiri; tiada Approve menyeluruh</td></tr>
-<tr><td>Imports</td><td>Ya (jika feature Imports on)</td><td>Mengikut kebenaran</td></tr>
+<tr><td>Sunting / padam</td><td>Ya</td><td>Hanya soalan sendiri</td></tr>
+<tr><td><span class="ui">Approve</span> / <span class="ui">Archive</span></td><td>Ya</td><td>Tidak</td></tr>
+<tr><td><span class="ui">Imports</span></td><td>Ya (jika feature Imports on)</td><td>Tidak</td></tr>
 </tbody>
 </table>
-<figure><img src="assets/img/guru-06-question-bank.webp" alt="Bank soalan dari pandangan Guru" loading="lazy"><figcaption>Bank soalan seperti dilihat oleh Cikgu Farid Hakim.</figcaption></figure>
+<figure id="fig-qb-4"><img src="assets/img/guru-06-question-bank.webp" alt="Bank soalan dari pandangan Guru" loading="lazy"><figcaption>Rajah 4 — Bank soalan seperti dilihat oleh Cikgu Farid Hakim.</figcaption></figure>
+
+<div class="tip">Berkaitan: <a href="set-ujian.html">Set ujian (3a)</a> · <a href="create-pathway.html">Laluan</a></div>
 
 <h2>English</h2>
-<p>Open <span class="ui">Question bank</span>, create with <span class="ui">Type</span> (<span class="ui">Aneka Pilihan</span> / Subjektif / Pemahaman / Esei), fill options and <span class="ui">Correct option</span>, approve as admin, tag to a pathway, then pick into a lesson <a href="set-ujian.html">Set ujian</a>. Teachers can create; approving others’ items is an administrator task.</p>
+<p class="lead">Create questions, options, answer keys, group into sets, and understand Guru vs Administrator. Primary examples: <strong>UASA Darjah 3</strong> questions; secondary: <strong>UPKK</strong> bank (144 questions).</p>
+
+<h3>1. Open Question bank</h3>
+<ol class="steps">
+<li><span class="ui">Administration</span> › <span class="ui">Akademi</span> › Questions → <span class="ui">Question bank</span> page.</li>
+<li>Buttons: <span class="ui">Imports</span> (administrators only) and <span class="ui">+ New question</span>. Search: <span class="ui">Search question, topic, or ID</span>. Status filter: <span class="ui">All statuses</span>.</li>
+<li>Columns: Question (type badge e.g. <span class="ui">Aneka Pilihan</span>), Topic, Difficulty, Status (<span class="ui">Approved</span>). See <strong>Figure 1</strong>.</li>
+</ol>
+
+<h3>2. Create a question</h3>
+<ol class="steps">
+<li><span class="ui">+ New question</span> → <span class="ui">Create question</span>.</li>
+<li><span class="ui">Type</span>: <span class="ui">Aneka Pilihan</span>, Subjective, Comprehension, or Essay.</li>
+<li><span class="ui">Question</span> field (placeholder <span class="ui">Tulis soalan…</span>).</li>
+<li>For multiple choice: <span class="ui">Option A</span>–<span class="ui">F</span> (optional <span class="ui">Add picture</span>), then <span class="ui">Correct option</span>.</li>
+<li><span class="ui">Marks</span>, <span class="ui">Difficulty</span>, and other fields at the bottom of the form. See <strong>Figure 2</strong>.</li>
+</ol>
+
+<h3>3. Edit &amp; answer key</h3>
+<ol class="steps">
+<li>Open an existing question → <span class="ui">Edit question</span>.</li>
+<li>Ensure <span class="ui">Correct option</span> is set (e.g. <span class="ui">C</span>).</li>
+<li>Teachers may edit/delete only questions they <strong>created themselves</strong>. <span class="ui">Approve</span> and <span class="ui">Archive</span> are administrator actions. See <strong>Figure 3</strong>.</li>
+</ol>
+
+<h3>4. Collect into a set</h3>
+<ol class="steps">
+<li>Approved questions are tagged to a pathway (<span class="ui">Bank soalan</span> tab on the pathway, e.g. 432 for UASA Darjah 3).</li>
+<li>They are then picked into a lesson <strong>Set ujian</strong> — see <a href="set-ujian.html">Guide 3a</a>. That is how a “set” is formed for pathway simulation.</li>
+</ol>
+
+<h3>5. Teacher vs Administrator</h3>
+<p><span class="ui">Imports</span>, <span class="ui">Approve</span>, and <span class="ui">Archive</span> are <strong>administrator-only</strong>. Teachers can view and create questions; they edit/delete only their own. Teachers do <strong>not</strong> have Imports.</p>
+<table>
+<thead><tr><th>Action</th><th>Administrator / Superadmin</th><th>Teacher (Guru)</th></tr></thead>
+<tbody>
+<tr><td>View &amp; create questions</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>Edit / delete</td><td>Yes</td><td>Own questions only</td></tr>
+<tr><td><span class="ui">Approve</span> / <span class="ui">Archive</span></td><td>Yes</td><td>No</td></tr>
+<tr><td><span class="ui">Imports</span></td><td>Yes (if Imports feature on)</td><td>No</td></tr>
+</tbody>
+</table>
+<p>See <strong>Figure 4</strong> for the teacher view of Question bank.</p>
+
+<div class="tip">Related: <a href="set-ujian.html">Set ujian (3a)</a> · <a href="create-pathway.html">Pathways</a></div>
 </main><footer><div class="wrap">How-To Guides · Screens may differ slightly as the platform is updated.</div></footer></body></html>
